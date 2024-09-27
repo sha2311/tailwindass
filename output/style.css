@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .nav-menu{
+        @apply text-[#072125] dark:text-white rounded hover:text-[#F44335] dark:hover:text-[#F44335]  text-base font-medium;
+    }
+    .video-span{
+        @apply text-[#00FF84] font-semibold text-[14px] md:text-[21px] font-["Inter"];
+    }
+    .video-name{
+        @apply dark:text-white  md:text-[17px] text-[12px] md:text-[14px] text-[#2D3142] font-["Inter"];
+    }
+
+    .check-icon{
+        @apply bg-[#F9CCC7] py-2  px-1.5 rounded-full;
+    }
+    .skill-tag{
+        @apply border border-red-500 px-3 py-1 rounded-full text-sm hover:bg-pink-500 hover:text-white transition-all duration-300;
+    }
+    .certificate-tag{
+            @apply bg-[#00FF84] px-3 py-0.5 rounded-full text-[10px] md:text-base font-medium hover:bg-pink-500;
+    }
+
+    .skill-tag{
+        @apply inline-block border border-[#F44335] text-gray-900 py-1 px-3 rounded-full hover:bg-pink-600 hover:text-white my-3 md:my-0;
+    }
+    .tech-section{
+        @apply md:col-span-3 col-span-12 bg-gray-900 dark:bg-slate-500 md:ml-5 px-4 flex flex-col justify-between rounded-l-lg shadow-lg mx-4 md:mx-0;
+    }
+    .tech-right{
+        @apply md:col-span-9 col-span-12 mt-5 md:mt-0 bg-white dark:bg-slate-600 md:mr-5 px-4 p-6 md:rounded-r-lg shadow-lg dark:shadow-none;
+    }
+    .footer-text{
+        @apply text-xs text-gray-600 hover:text-gray-900 dark:text-white;
+    }
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
